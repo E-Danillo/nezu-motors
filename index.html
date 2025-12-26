@@ -4,44 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Nezu Motors</title>
+    <title>Nezuma Motors</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="">VEÍCULOS</a></li>
-            <li><a href="">INOVAÇÃO</a></li>
-            <li><a href="">EXCLUSIVOS</a></li>
-            <li><a href="">DESIGN</a></li>     
-        </ul>
-    </nav>
 
+    <!-- NAV -->
+<nav>
+    <div class="logo">Nezuma</div>
+
+    <ul id="nav-links">
+        <li><a href="#modelos">VEÍCULOS</a></li>
+        <li><a href="#features">DIFERENCIAIS</a></li>
+        <li><a href="#galeria">GALERIA</a></li>
+        <li><a href="#historia">HISTÓRIA</a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+    <!-- HERO -->
     <div class="hero">
         <div id="container-hero">
-            <h1>Nezu-Motors</h1>
-            <p>Não dirija, flutue.</p>
+            <h1>Nezuma Motors</h1>
+            <p>Não dirija. Flutue entre lendas.</p>
             <button>Explore nossa coleção</button>
         </div>
     </div>
 
+    <!-- FEATURES -->
     <section id="features">
         <div id="container-cards">
-            <div class="card">
-                <div class="container-img-card"><img src="imagens/feature_image.jpg" alt=""></div>
-                <h3>Marcas Formidáveis</h3>
-                <p>As mais luxuosas de todos os tempos.</p>
+
+            <div class="card reveal">
+                <div class="container-img-card">
+                    <img src="imagens/feature_image.jpg" alt="Marcas de luxo">
+                </div>
+                <h3>Marcas Selecionadas</h3>
+                <p>
+                    Curadoria rigorosa dos veículos mais icônicos e desejados do mundo.
+                </p>
             </div>
-            <div class="card">
-                <div class="container-img-card"><img src="imagens/feature_image3.png" alt=""></div>
-                <h3>Performance Bruta</h3>
-                <p>Linhas esculpidas para máxima eficiência e estilo.</p>
+
+            <div class="card reveal">
+                <div class="container-img-card">
+                    <img src="imagens/feature_image3.png" alt="Engenharia própria">
+                </div>
+                <h3>Engenharia Refinada</h3>
+                <p>
+                    Modelos autorais desenvolvidos para unir potência, precisão e identidade.
+                </p>
             </div>
-            <div class="card">
-                <div class="container-img-card"><img src="imagens/feature_image2.jpg" alt=""></div>
-                <h3>Personalização Absoluta</h3>
-                <p>Torne o veículo o espelho da sua alma.</p>
+
+            <div class="card reveal">
+                <div class="container-img-card">
+                    <img src="imagens/feature_image2.jpg" alt="Personalização">
+                </div>
+                <h3>Exclusividade Sob Medida</h3>
+                <p>
+                    Veículos únicos, personalizados para refletir quem você é.
+                </p>
             </div>
+
         </div>
     </section>
+
+    <!-- HISTÓRIA -->
+    <section id="historia">
+        <div class="container-historia">
+
+            <div class="conteudo-historia reveal">
+                <h2>Nossa História</h2>
+
+                <p>
+                    Fundada em 1950, a Nezuma Motors nasceu de uma visão simples e ousada:
+                    criar experiências automotivas que não fossem apenas conduzidas,
+                    mas sentidas.
+                </p>
+
+                <p>
+                    Atuando tanto como fabricante quanto como revendedora de luxo,
+                    a Nezuma construiu sua identidade unindo engenharia autoral
+                    à curadoria das marcas mais prestigiadas do mundo.
+                </p>
+
+                <p>
+                    Hoje, a Nezuma Motors representa uma filosofia atemporal:
+                    <strong>não dirija, flutue.</strong>
+                </p>
+            </div>
+
+            <div class="imagem-historia reveal">
+                <img src="imagens/history_image.jpg" alt="Linha de produção Nezuma">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODELOS -->
+    <section id="modelos">
+        <h2 class="section-title">Modelos Autorais Nezuma</h2>
+
+        <div class="modelos-grid">
+
+            <div class="modelo-card reveal">
+                <img src="imagens/modelo1.png" alt="Nezuma Concept One">
+                <h3>Nezuma Concept One</h3>
+                <p>
+                    O primeiro veículo assinado pela Nezuma.
+                    Elegância silenciosa e engenharia de precisão.
+                </p>
+            </div>
+
+            <div class="modelo-card reveal">
+                <img src="imagens/modelo2.png" alt="Nezuma Jade">
+                <h3>Nezuma Jade</h3>
+                <p>
+                    Um esportivo autoral que combina agressividade,
+                    fluidez e presença.
+                </p>
+            </div>
+
+            <div class="modelo-card reveal">
+                <img src="imagens/modelo3.png" alt="Nezuma Obsidian">
+                <h3>Nezuma Obsidian</h3>
+                <p>
+                    A interpretação máxima de força, luxo e futuro.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+        <h2 class="section-title">Galeria Nezuma</h2>
+
+        <div class="galeria-grid">
+            <img class="reveal" src="imagens/galeria1.png" alt="Showroom Nezuma">
+            <img class="reveal" src="imagens/galeria2.jpg" alt="Detalhes de design">
+            <img class="reveal" src="imagens/galeria3.jpg" alt="Interior premium">
+            <img class="reveal" src="imagens/galeria4.jpg" alt="Modelos exclusivos">
+            <img class="reveal" src="imagens/galeria5.jpg" alt="Performance Nezuma">
+            <img class="reveal" src="imagens/galeria6.jpg" alt="Experiência Nezuma">
+        </div>
+    </section>
+
+    <!-- SCRIPT REVEAL -->
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener('scroll', () => {
+            for (let reveal of reveals) {
+                const top = reveal.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (top < windowHeight - 50) {
+                    reveal.classList.add('active');
+                }
+            }
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
