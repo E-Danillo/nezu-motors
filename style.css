@@ -40,7 +40,7 @@ nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 3rem;
     list-style: none;
     margin-right: 5rem;
     font-weight: 400;
@@ -55,13 +55,17 @@ h1, h2, h3 {
 }
 
 a {
+    text-decoration: none;
+}
+
+nav a {
     color: var(--Texto);
     text-decoration: none; 
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s ease; 
 }
 
-a:hover {
+nav a:hover {
     border-bottom: 2px solid var(--Texto); 
 }
 
@@ -72,6 +76,14 @@ p, li {
 
 li {
     letter-spacing: 0.03em;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+    margin-left: 5rem;
+    margin-right: 4rem;
 }
 
 .hero {
@@ -205,10 +217,15 @@ section#features {
 }
 
 .imagem-historia img {
-        width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
+    transition: transform 0.4s ease;
+}
+
+.imagem-historia img:hover {
+    transform: scale(1.05);
 }
 
 strong {
@@ -240,7 +257,7 @@ strong {
 
 .modelo-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 .modelo-card img {
@@ -293,12 +310,6 @@ strong {
 }
 
 
-.logo {
-    font-family: "Playfair Display", serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.08em;
-    margin-left: 5rem;
-}
 
 .hamburger {
     display: none;
@@ -311,6 +322,19 @@ strong {
     width: 25px;
     height: 2px;
     background-color: var(--Texto);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    .logo {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 /* Mobile Styles */
