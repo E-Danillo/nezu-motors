@@ -27,7 +27,7 @@ body {
 .hero-modelo {
     position: relative;
     height: 90vh;
-    background: url("imagens/modelo1.png") center / cover no-repeat;
+    background: url("../imagens/modelo1.png") center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +69,29 @@ section h2 {
     letter-spacing: 0.05em;
 }
 
+.modelo-specs {
+    position: relative;
+    background-image: url("../imagens/background_concept.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.modelo-specs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.modelo-specs > * {
+    position: relative;
+    z-index: 1; 
+}
+
 /* VISÃO */
 .modelo-visao p {
     max-width: 700px;
@@ -103,6 +126,29 @@ section h2 {
 .modelo-seguranca li:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(15, 61, 46, 0.6);
+}
+
+.modelo-modos {
+    position: relative;
+    background-image: url(../imagens/background_concept2.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.modelo-modos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.modelo-modos > * {
+    position: relative;
+    z-index: 1; 
 }
 
 /* TEXTO */

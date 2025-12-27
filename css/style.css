@@ -88,7 +88,7 @@ li {
 
 .hero {
     position: relative;
-    background-image: url(imagens/hero_image.jpg);
+    background-image: url(../imagens/hero_image.jpg);
     height: 90vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -165,7 +165,7 @@ section#features {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 16px rgba(15, 61, 46, 0.6);
 }
 
 .card img {
@@ -257,8 +257,7 @@ strong {
 
 .modelo-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-}
+    box-shadow: 0 6px 16px rgba(15, 61, 46, 0.6);}
 
 .modelo-card img {
     width: 100%;
