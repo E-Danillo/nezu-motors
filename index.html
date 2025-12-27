@@ -31,7 +31,7 @@
         <div id="container-hero">
             <h1>Nezuma Motors</h1>
             <p>Não dirija. Flutue entre lendas.</p>
-            <button>Explore nossa coleção</button>
+            <a href="#modelos"><button>Explore nossa coleção</button></a>
         </div>
     </div>
 
@@ -168,12 +168,14 @@
             }
         });
 
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('nav ul');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+
     </script>
 
 </body>
