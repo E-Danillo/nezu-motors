@@ -6,7 +6,7 @@
 .hero-modelo {
     position: relative;
     height: 90vh;
-    background: url("../imagens/modelo1.png") center / cover no-repeat;
+    background: url("../imagens/modelo1.png") 30% 65% / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,12 +53,13 @@ section h2 {
 }
 
 .modelo-specs {
+    min-height: 90vh;
     position: relative;
     background-image: url("../imagens/background_concept.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    background-position: center;
+    background-position: 30% 76%;
     z-index: 2;
 }
 
@@ -112,12 +113,13 @@ section h2 {
 }
 
 .modelo-modos {
+    min-height: 90vh;
     position: relative;
     background-image: url(../imagens/background_concept2.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    background-position: center;
+    background-position: 30% 58%;
     z-index: 2;
 }
 
@@ -175,6 +177,14 @@ section h2 {
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.2rem;
+    }
+
+    .hero-modelo {
+        background-position: center;
+    }
+
+    .modelo-specs {
+        background-position: center;
     }
 
     section {
