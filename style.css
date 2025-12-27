@@ -28,11 +28,12 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: "Playfair Display", serif;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: var(--Texto);
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 2rem 0;
 }
 
 nav ul {
@@ -41,9 +42,16 @@ nav ul {
     justify-content: space-around;
     gap: 1rem;
     list-style: none;
-    padding: 30px;
+    margin-right: 5rem;
     font-weight: 400;
     z-index: 999;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--Texto);
 }
 
 a {
@@ -284,18 +292,12 @@ strong {
     filter: brightness(1.1);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
 
 .logo {
     font-family: "Playfair Display", serif;
     font-size: 1.2rem;
     letter-spacing: 0.08em;
-    padding: 40px;
+    margin-left: 5rem;
 }
 
 .hamburger {
@@ -311,7 +313,7 @@ nav {
     background-color: var(--Texto);
 }
 
-
+/* Mobile Styles */
 @media (max-width: 768px) {
     #container-hero {
         margin-left: 5%;
@@ -335,6 +337,10 @@ nav {
 
     .imagem-historia img {
         width: 100%;
+    }
+
+    .logo {
+        margin-left: 2rem;
     }
 
     nav ul {
@@ -361,6 +367,7 @@ nav {
 
     .hamburger {
         display: flex;
+        margin-right: 2rem;
     }
 
     #container-hero {
