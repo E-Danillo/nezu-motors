@@ -2,27 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap');
 
-:root {
-    --Fundo: #0B0B0B;
-    --Cards: #1A1A1A;
-    --Texto: #EDEDED;
-    --Destaque: #0F3D2E;
-    --Hover: #18634a;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--Fundo);
-    color: var(--Texto);
-    font-family: "Inter", sans-serif;
-    line-height: 1.7;
-}
-
 /* HERO */
 .hero-modelo {
     position: relative;
@@ -55,6 +34,10 @@ body {
     margin-top: 1rem;
     font-size: 1.2rem;
     opacity: 0.9;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 /* SEÇÕES */
@@ -151,11 +134,6 @@ section h2 {
     z-index: 1; 
 }
 
-/* TEXTO */
-p {
-    margin-bottom: 1rem;
-}
-
 /* SEGURANÇA */
 .modelo-seguranca p {
     max-width: 650px;
@@ -201,5 +179,10 @@ p {
 
     section {
         padding: 4rem 6%;
+    }
+
+    /*TEXTO */
+    p, h2 {
+        text-align: center;
     }
 }
