@@ -2,11 +2,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap');
 
+.concept {
+    --hero-bg: url("../imagens/modelo1.png");
+    --specs-bg: url("../imagens/background_concept.png");
+    --modos-bg: url("../imagens/background_concept2.png");
+}
+
+.jade {
+    --hero-bg: url("../imagens/modelo2.png");
+    --specs-bg: url("../imagens/jade-specs.png");
+    --modos-bg: url("../imagens/jade-modos.png");
+    --interior-bg: url("../imagens/jade-interior.png");
+}
+
+.obsidian {
+    --hero-bg: url("../imagens/shadow-hero.png");
+    --specs-bg: url("../imagens/shadow-specs.png");
+    --modos-bg: url("../imagens/shadow-modos.png");
+}
+
 /* HERO */
 .hero-modelo {
     position: relative;
     height: 90vh;
-    background: url("../imagens/modelo1.png") 30% 65% / cover no-repeat;
+    background: var(--hero-bg) 30% 65% / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +74,7 @@ section h2 {
 .modelo-specs {
     min-height: 90vh;
     position: relative;
-    background-image: url("../imagens/background_concept.png");
+    background-image: var(--specs-bg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -112,10 +131,19 @@ section h2 {
     box-shadow: 0 6px 16px rgba(15, 61, 46, 0.6);
 }
 
+.modelo-interior{
+    background-image: var(--interior-bg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
 .modelo-modos {
     min-height: 90vh;
     position: relative;
-    background-image: url(../imagens/background_concept2.png);
+    background-image: var(--modos-bg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;

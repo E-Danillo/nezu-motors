@@ -9,7 +9,7 @@
 }
 
 :root {
-    --Fundo: #0B0B0B;
+    --Fundo: #000000;
     --Cards: #1A1A1A;
     --Texto: #EDEDED;
     --Destaque: #0F3D2E; 
@@ -29,22 +29,28 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 2rem 0;
+    margin: 0 auto;
+    padding: 2rem 4rem;
 }
 
 nav ul {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    gap: 3rem;
+    justify-content: space-between; /* ESSENCIAL */
+    align-items: center;
     list-style: none;
-    margin-right: 5rem;
     font-weight: 400;
-    z-index: 999;
+    letter-spacing: 0.15em;
+}
+
+#cabecalho img {
+    width: 70px;
+    margin-left: 2rem;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: center;  
+    margin: 1rem;
 }
 
 h1, h2, h3 {
@@ -78,22 +84,16 @@ li {
     letter-spacing: 0.03em;
 }
 
-.logo {
-    font-family: "Playfair Display", serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.08em;
-    margin-left: 5rem;
-    margin-right: 4rem;
-}
-
 .hero {
     position: relative;
     background-image: url(../imagens/hero_image.jpg);
-    height: 90vh;
+    height: 70vh;
+    width: 90%;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
+    margin-left: 5%;
 }
 
 .hero::before {
@@ -139,6 +139,7 @@ button:hover {
 
 section#features {
     min-height: 80vh;
+    margin-top: 20rem;
 }
 
 #container-cards {
@@ -163,17 +164,17 @@ section#features {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(15, 61, 46, 0.6);
-}
-
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;  
     margin: 0 auto;
     border-radius: 6px;
+    transition: transform 0.4s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
 }
 
 .card h3, .card p {
@@ -255,14 +256,15 @@ strong {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.modelo-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 16px rgba(15, 61, 46, 0.6);}
-
 .modelo-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.modelo-card img:hover {
+    transform: scale(1.05);
 }
 
 .modelo-card h3 {
@@ -277,7 +279,7 @@ strong {
 .reveal {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.6s ease;
+    transition: transform .4s ease-out,opacity .8s ease-out;
 }
 
 .reveal.active {
@@ -329,11 +331,6 @@ strong {
         gap: 1.5rem;
         margin-right: 2rem;
     }
-
-    .logo {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
 }
 
 /* Mobile Styles */
@@ -362,22 +359,21 @@ strong {
         width: 100%;
     }
 
-    .logo {
-        margin-left: 2rem;
-    }
-
     nav ul {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: var(--Fundo);
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        padding: 0;
-        transition: max-height 0.4s ease;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: var(--Fundo);
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    padding-left: 0px;
+    transition: max-height 0.4s ease;
+    z-index: 2000;
+    padding-left: 30px;
     }
 
     nav ul.active {
@@ -389,8 +385,11 @@ strong {
     }
 
     .hamburger {
+        position: absolute;
         display: flex;
         margin-right: 2rem;
+        top: 25px;
+        left: 20px;
     }
 
     #container-hero {
@@ -398,4 +397,7 @@ strong {
         width: 90%;
         text-align: center;
     }
+
+    #cabecalho img {
+        margin-left: 0;
 }
