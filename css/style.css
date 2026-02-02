@@ -60,6 +60,11 @@ h1, h2, h3 {
     color: var(--Texto);
 }
 
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }
@@ -187,6 +192,10 @@ section#features {
     margin-bottom: 14px;
 }
 
+#title_history {
+    text-align: left;
+}
+
 #historia {
     padding: 6rem 10%;
 }
@@ -287,6 +296,15 @@ strong {
     transform: translateY(0);
 }
 
+.reveal_text {
+    color: var(--Cards);
+    transition: color .8s ease-out;
+}
+
+.reveal_text.active_text {
+    color: var(--Texto);
+}
+
 #galeria {
     padding: 6rem 10%;
 }
@@ -310,8 +328,6 @@ strong {
     filter: brightness(1.1);
 }
 
-
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -323,6 +339,14 @@ strong {
     width: 25px;
     height: 2px;
     background-color: var(--Texto);
+}
+
+footer {
+    background-color: var(--Cards);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    font-size: 0.9rem;
 }
 
 /* Tablet Styles */
@@ -400,4 +424,5 @@ strong {
 
     #cabecalho img {
         margin-left: 0;
+}
 }
